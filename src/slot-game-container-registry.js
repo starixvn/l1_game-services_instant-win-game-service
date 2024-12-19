@@ -1,6 +1,6 @@
 import awilix from "awilix";
 import * as Slot from "sc-instant-win-base";
-import { CurrencyGroupGames, rounds } from "./models";
+import { rounds } from "./models";
 
 const { asValue } = awilix;
 
@@ -12,7 +12,6 @@ export default class SlotGameContainerRegistry extends Slot.SlotContainerRegistr
 
         this.container.register({
             roundsRepository: asValue(rounds(definition.configName)),
-            currencyGroupGamesRepository: asValue(CurrencyGroupGames),
         });
     }
 }
