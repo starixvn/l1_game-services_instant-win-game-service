@@ -1,5 +1,5 @@
 import awilix from "awilix";
-import * as Slot from "sc-slot-game-base";
+import * as Slot from "sc-instant-win-base";
 import { CurrencyGroupGames, rounds } from "./models";
 
 const { asValue } = awilix;

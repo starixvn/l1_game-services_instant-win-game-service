@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { Models } from "sc-slot-game-base";
+import { Models } from "sc-instant-win-base";
 
 const roundSchema = Models.RoundsSchema;
 

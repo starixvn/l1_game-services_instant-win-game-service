@@ -1,4 +1,4 @@
-import * as Slot from "sc-slot-game-base";
+import * as Slot from "sc-instant-win-base";
 import SlotGameContainerRegistry from "../../src/slot-game-container-registry";
 
 jest.mock(

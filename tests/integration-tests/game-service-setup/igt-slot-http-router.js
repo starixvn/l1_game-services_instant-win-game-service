@@ -1,4 +1,4 @@
-import { SlotHttpRouter } from "sc-slot-game-base/src/routers";
+import { SlotHttpRouter } from "sc-instant-win-base/src/routers";
 
 export default class IGTSlotHttpRouter extends SlotHttpRouter {
     init(app) {

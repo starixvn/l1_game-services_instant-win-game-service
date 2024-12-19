@@ -1,7 +1,7 @@
-import { SlotGameData, SlotGameDefinition } from "sc-slot-game-base";
-import { Core } from "sc-game-base";
 import { gameConfigs as gameConfigsRepository } from "sc-base-database";
+import { Core } from "sc-game-base";
 import { initAPIStub, stubUserService } from "sc-game-service-integration-utils";
+import { SlotGameData, SlotGameDefinition } from "sc-instant-win-base";
 import appConfigs from "../../../src/app-configs.IGT";
 import gameSettings from "../../../src/game-settings";
 import IGTSlotGameContainerRegistry from "./igt-container-registry";
