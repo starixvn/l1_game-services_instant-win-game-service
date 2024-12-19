@@ -1,0 +1,60 @@
+export default {
+    hostingPort: 5000,
+    apiSettings: {
+        enabledApi: true,
+        apiUrl: "http://l2_game_api_sit:5000",
+        authUrl: "http://l2_auth_api_sit:5000",
+        client: {
+            id: "game-server",
+            secret: "gameserver@20luminet&",
+        },
+        useAuthenticate: true,
+        requestTimeout: 10000,
+        placeBetTimeout: 4000,
+        hitJackpotTimeout: 200000,
+        enabledApiLogs: true,
+    },
+    notificationServiceSettings: {
+        url: "http://l2_notification_service_sit:5000/api",
+    },
+    socketOptions: {
+        pingInterval: 60 * 1000,
+        pingTimeout: 60 * 1000,
+        transports: ["websocket"],
+        allowUpgrades: false,
+        perMessageDeflate: false,
+    },
+    enabledLogs: true,
+    database: {
+        url: "mongodb://lmn_backend:LmnBackend%40517@10.99.99.53:39230,10.99.99.54:39230,10.99.99.188:39230,10.99.99.187:39230/?replicaSet=SabaL2SIT",
+        options: {
+            dbName: "minigame",
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+        },
+    },
+    sentry: {
+        sentryUrl: "http://8ac47fca6d3e4a41908896a64ef201ac@10.2.190.51:9009/53",
+        logIdentifier: "fourguardians",
+        env: "SIT",
+    },
+    authenticateSettings: {
+        url: "http://l2_auth_api_sit:5000",
+        id: "game-services",
+        secret: "gameservices@20luminet&",
+        requestTimeout: 10000,
+        useAuthenticate: true,
+        audiences: ["api", "admin-api"],
+    },
+    userServiceSettings: {
+        url: "http://l2_user_service_sit:5000",
+    },
+    adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
+    freeSpinLiveSeconds: 86400, // 1 day
+    bonusLiveSeconds: 125,
+    metrics: {
+        enable: true,
+        secretKey: "6c1f0f28-70f2-46ae-b031-22624a6cd8df",
+    },
+    enableMsgpackParser: true,
+};
