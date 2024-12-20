@@ -1,3 +1,5 @@
+import freeSpins from "./freespins";
 import rounds from "./rounds";
 
-export { rounds };
+export { freeSpins, rounds };
+
