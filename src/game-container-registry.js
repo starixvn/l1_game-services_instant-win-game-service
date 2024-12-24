@@ -5,7 +5,7 @@ import freespins from "./models/freespins";
 
 const { asValue } = awilix;
 
-export default class SlotGameContainerRegistry extends Slot.SlotContainerRegistry {
+export default class GameContainerRegistry extends Slot.SlotContainerRegistry {
     registerModels() {
         const definition = this.container.resolve("definition");
 

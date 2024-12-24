@@ -4,8 +4,8 @@ import { Core } from "sc-game-base";
 import { SlotGameData, SlotGameDefinition } from "sc-instant-win-base";
 import { addIdentifiers, initializer, initSpanProcessor } from "sc-instrument";
 import appConfigs from "./app-configs";
+import GameContainerRegistry from "./game-container-registry";
 import gameSettings from "./game-settings";
-import SlotGameContainerRegistry from "./slot-game-container-registry";
 
 const run = async () => {
     const appName = process.env.APP_NAME;
@@ -33,7 +33,7 @@ const run = async () => {
 
             const gameData = new SlotGameData(gameSettings.durations.wholeRound);
             const definition = new SlotGameDefinition(gameSettings);
-            const container = new SlotGameContainerRegistry().register(appConfigs, definition, gameData);
+            const container = new GameContainerRegistry().register(appConfigs, definition, gameData);
 
             await app.startGame(container);
         } else {
