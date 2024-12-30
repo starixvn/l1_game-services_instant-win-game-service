@@ -11,4 +11,5 @@ export default {
     jackpotLiveSeconds: appConfigs.jackpotLiveSeconds ?? 65,
     delaySecondsAfterJackpot: appConfigs.delaySecondsAfterJackpot ?? 2,
     applyNewBonusCalculation: true,
+    historyPageSize: 8,
 };
