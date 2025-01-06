@@ -1,5 +1,5 @@
 import * as Slot from "sc-instant-win-base";
-import SlotGameContainerRegistry from "../../src/slot-game-container-registry";
+import GameContainerRegistry from "../../src/game-container-registry";
 
 jest.mock(
     "awilix",
@@ -17,7 +17,7 @@ jest.mock(
 describe("extends", () => {
     it("should extend Slot.SlotContainerRegistry", () => {
         //Arrange
-        const registry = new SlotGameContainerRegistry();
+        const registry = new GameContainerRegistry();
         // Assert
         expect(registry instanceof Slot.SlotContainerRegistry);
     });
