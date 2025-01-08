@@ -58,4 +58,5 @@ export default {
         secretKey: "6c1f0f28-70f2-46ae-b031-22624a6cd8df",
     },
     enableMsgpackParser: true,
+    baseBetLevels: [40, 60, 400, 800, 5000, 10000, 15000, 20000, 25000, 50000, 60000, 70000, 80000, 90000, 100000],
 };

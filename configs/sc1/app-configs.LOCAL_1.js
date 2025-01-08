@@ -61,4 +61,5 @@ export default {
         enabled: true,
         endpoint: "http://10.10.50.69:4318/v1/traces",
     },
+    baseBetLevels: [0.01, 0.02, 0.03, 0.04, 0.4, 0.6, 1, 2, 3, 4, 6, 8, 9, 10, 12],
 };
