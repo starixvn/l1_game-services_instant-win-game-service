@@ -10,9 +10,9 @@ import {
     normalUser,
 } from "sc-game-service-integration-utils";
 
+import initCurrencyGroupGames from "sc-instant-win-base/src/models/currency-group-games";
 import appConfigs from "../../../src/app-configs.IGT";
 import { rounds as Rounds } from "../../../src/models";
-import currencyGroupGames from "../../../src/models/currency-group-games";
 import { currencyData, game, gameConfig, rounds } from "./test-data";
 
 const connectDatabase = async () => {
@@ -68,7 +68,7 @@ const createCurrencyGroupGames = async (currencyGroupId, gameId, gameConfig) => 
         defaultBetLevel: 1,
     };
 
-    return currencyGroupGames.create({ gameId, ...gameConfig, ...data });
+    return initCurrencyGroupGames().create({ gameId, ...gameConfig, ...data });
 };
 
 createTestData();
