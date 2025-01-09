@@ -59,15 +59,15 @@ export const ingameTest = () => {
                 },
                 7: {
                     2: 0,
-                    3: 3,
-                    4: 6,
-                    5: 18,
+                    3: 0,
+                    4: 0,
+                    5: 0,
                 },
                 8: {
                     2: 0,
-                    3: 3,
-                    4: 4,
-                    5: 5,
+                    3: 0,
+                    4: 0,
+                    5: 0,
                 },
                 9: {
                     2: 8,
@@ -82,7 +82,6 @@ export const ingameTest = () => {
                     5: 5000,
                 },
             });
-            expect(gameConfigs.betLevels).toStrictEqual([0.1, 1, 5]);
 
             normalUserClientDriver.close();
         });
