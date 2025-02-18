@@ -60,8 +60,9 @@ export default {
         token: "0A40aOc7CtpzjbBSJu8KNWQRoXyjRvf9",
         requestTimeout: 5000,
         conversationIds: {
-            boostedOdds: -1001516573929,
+            boostedOdds: -1001516573929,    
         },
     },
     baseBetLevels: [0.01, 0.02, 0.03, 0.04, 0.4, 0.6, 1, 2, 3, 4, 6, 8, 9, 10, 12],
+    prefixServiceName: "hd",
 };

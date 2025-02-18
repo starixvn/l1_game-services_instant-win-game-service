@@ -9,7 +9,7 @@ import gameSettings from "./game-settings";
 
 const run = async () => {
     const appName = process.env.APP_NAME;
-    const gameName = appName ? appName.replace("service", "").replaceAll("_", "") : "";
+    const gameName = appName ? appName.match(new RegExp(`(?:${appConfigs.prefixServiceName ?? ""})_?([\\w]+)_service`, "i"))[1].replaceAll("_", "") : "";
 
     if (appConfigs.otel?.enabled) {
         const { otel } = appConfigs;
