@@ -11,6 +11,7 @@ export default {
         useAuthenticate: true,
         requestTimeout: 10000,
         placeBetTimeout: 4000,
+        hitJackpotTimeout: 200000,
         enabledApiLogs: true,
     },
     authenticateSettings: {
@@ -60,6 +61,8 @@ export default {
             boostedOdds: -1001774561372,
         },
     },
+    freeSpinLiveSeconds: 86400, // 1 day
+    bonusLiveSeconds: 125,
     enabledBoostedOdds: true,
     otel: {
         system: "SG",

@@ -11,6 +11,7 @@ export default {
         useAuthenticate: true,
         requestTimeout: 10000,
         placeBetTimeout: 4000,
+        hitJackpotTimeout: 200000,
         enabledApiLogs: true,
     },
     authenticateSettings: {
@@ -52,6 +53,8 @@ export default {
         secretKey: "6c1f0f28-70f2-46ae-b031-22624a6cd8df",
     },
     enableMsgpackParser: false,
+    freeSpinLiveSeconds: 86400, // 1 day
+    bonusLiveSeconds: 125,
     chatBotSettings: {
         url: "https://bot.nexdev.net/skynex/api/messages/",
         token: "0A40aOc7CtpzjbBSJu8KNWQRoXyjRvf9",
