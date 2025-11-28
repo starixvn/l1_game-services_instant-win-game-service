@@ -34,9 +34,9 @@ export default {
         },
     },
     sentry: {
-        sentryUrl: "http://f4980024f65945179a125e7ce17286d0@sentrysc-ovs.ops-kluat.gamora.prod/178",
+        sentryUrl: "http://f4980024f65945179a125e7ce17286d0@sentry-scklprod-ovs.ops-klprod.gamora.prod/178",
         logIdentifier: "tapfortune",
-        env: "KLPROD",
+        env: "PROD",
     },
     authenticateSettings: {
         url: "http://sp-hd-auth-api-klprod-service:5000",
