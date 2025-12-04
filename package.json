@@ -1,5 +1,5 @@
 {
-    "name": "slot-game-service",
+    "name": "instant-win-game-service",
     "version": "1.0.0",
     "description": "",
     "main": "./src/app.js",
@@ -21,7 +21,7 @@
     "license": "ISC",
     "type": "module",
     "dependencies": {
-        "sc-instant-win-base": "2.2.0"
+        "sc-instant-win-base": "2.2.1-hotdog-beta.0"
     },
     "resolutions": {
         "sc-base-apis": "1.18.2",
