@@ -2,8 +2,8 @@ export default {
     hostingPort: 5000,
     apiSettings: {
         enabledApi: true,
-        apiUrl: "http://l1-api2.lumigame.com",
-        authUrl: "http://l1-auth2.lumigame.com",
+        apiUrl: "https://hd-api.lumigame.com",
+        authUrl: "https://hd-auth.lumigame.com",
         client: {
             id: "game-server",
             secret: "gameserver@20luminet&",
@@ -22,28 +22,28 @@ export default {
     },
     enabledLogs: true,
     database: {
-        url: "mongodb://lmn_backend:LmnBackend@10.10.50.12:39102,10.10.50.13:39102,10.10.50.14:39102/?replicaSet=L1ppLocal",
+        url: "mongodb://hotdog_backend:HotdogBackend@10.10.50.12:39400,10.10.50.13:39400,10.10.50.14:39400/?replicaSet=SPLocal0&appName=TapFortune",
         options: {
-            dbName: "minigame",
+            dbName: "hotdog_minigame",
             useNewUrlParser: true,
             useUnifiedTopology: true,
         },
     },
     sentry: {
-        sentryUrl: "https://8f52d1ed1dbc4500adddbfb6e20f66aa@sentryuat.sabagame.com/217",
-        logIdentifier: "fourguardians",
+        sentryUrl: "https://81e47b9ef0c34ab08c30a8612d9a348e@sentry.lumigame.com/85",
+        logIdentifier: "HD-TapFortune",
         env: "LOCAL",
     },
     authenticateSettings: {
-        url: "http://l1-auth2.lumigame.com",
+        url: "https://hd-auth.lumigame.com",
         id: "game-services",
         secret: "gameservices@20luminet&",
         requestTimeout: 10000,
-        useAuthenticate: false,
+        useAuthenticate: true,
         audiences: ["api", "admin-api"],
     },
     userServiceSettings: {
-        url: "https://l1-proxy2.lumigame.com/user",
+        url: "https://hd-proxy.lumigame.com/user",
     },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
     freeSpinLiveSeconds: 86400, // 1 day
@@ -54,4 +54,5 @@ export default {
         enabled: false,
         endpoint: "http://10.10.50.69:14268/api/traces",
     },
+    prefixServiceName: "hd",
 };
